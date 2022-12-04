@@ -1,0 +1,11 @@
+{
+  "name": "common-styles",
+  "version": "1.0.0",
+  "description": "A package with a common styles only",
+  "main": "main.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ZsoltD",
+  "license": "ISC"
+}
