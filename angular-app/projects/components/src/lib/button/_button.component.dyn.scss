@@ -1,0 +1,16 @@
+@mixin button-component-dynamic($config) {
+  $component-config: map-merge(
+    (
+      lib-button-background-color: null,
+      lib-button-color: null,
+    ),
+    $config
+  );
+
+  .lib-button {
+    button {
+      background-color: map-get($component-config, lib-button-background-color);
+      color: map-get($component-config, lib-button-color);
+    }
+  }
+}

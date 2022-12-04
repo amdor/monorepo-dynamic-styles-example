@@ -1,0 +1,16 @@
+@use "common-styles/main" as theme;
+@use "components/main" as components;
+
+.app-component {
+  &-first-container > p {
+    max-width: 200px;
+    @include theme.ellipsis;
+    @include theme.round-dotted-border(5px);
+  }
+
+  &-card-container {
+    max-width: 300px;
+    margin: 12px 0;
+    @include components.card-component-dynamic((lib-card-border: 1px dotted blue));
+  }
+}

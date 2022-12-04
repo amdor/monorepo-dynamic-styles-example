@@ -1,0 +1,12 @@
+@mixin card-component-dynamic($config) {
+  $component-config: map-merge(
+    (
+      lib-card-border: null,
+    ),
+    $config
+  );
+
+  .lib-card {
+    border: map-get($component-config, lib-card-border);
+  }
+}

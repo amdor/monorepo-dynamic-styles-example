@@ -1,0 +1,7 @@
+@use "./card/card.component.dyn" as card;
+@use "./button/button.component.dyn" as button;
+
+@mixin lib($config) {
+  @include card.card-component-dynamic($config);
+  @include button.button-component-dynamic($config);
+}
